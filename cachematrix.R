@@ -58,7 +58,7 @@ cacheSolve <- function(x, ...) {
                 ## Compute, cache and return the inverse
                 message("Computing inverse ...")
 		mat <- x$get()
-		inverse <- solve(mat)
+		inverse <- solve(mat,...)
 		x$setinverse(inverse)
 		inverse
 	}
